@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const { auth, JWT_SECRET } = require('./authMW');
 const mongoose = require('mongoose');
 const { UserModel, TodoModel } = require('./db');
-mongoose.connect("mongodb+srv://bhanuprasad03:Bhanu08102005@cluster0.zrvybt7.mongodb.net/my-todo-app").then(() => console.log("✅ Connected to MongoDB"))
+mongoose.connect("mongodb+srv://bhanuprasad03:@cluster0.zrvybt7.mongodb.net/my-todo-app").then(() => console.log("✅ Connected to MongoDB"))
     .catch(err => console.error("❌ DB Connection Error:", err));
 
 
